@@ -1,0 +1,30 @@
+main {
+    width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #f0f0f0;
+}
+
+aside {
+    width: 200px;
+    margin: 20px;
+    border: 1px solid #ddd;
+    padding: 10px;
+    background-color: #e0e0e0;
+    color: #666;
+}
+
+aside img {
+    width: 200px;
+    height: auto;
+}
+
+p {
+    padding: 0;
+}
+
+footer {
+    margin-top: 40px;
+    border-top: 1px solid #ccc;
+    text-align: center;
+}
