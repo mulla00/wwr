@@ -1,83 +1,83 @@
 :root {
-    --primary-color: #0D0E24; 
-    --secondary-color: #A7A9B9;
-    --accent1-color: #373E7C;
-    --accent2-color: #1E203F;
-    --background-color: rgba(255, 255, 255, 0.9);
-  }
-  
-  body {
-    font-family: "Roboto", sans-serif;
-    margin: 0;
-    padding: 0;
-    max-width: 1200px;
-    margin: 0 auto;
-  }
-  
-  header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 20px;
-  }
-  
-  nav a {
-    margin: 0 15px;
-    color: var(--primary-color);
-    text-decoration: none;
-  }
-  
-  nav a:hover {
-    text-decoration: underline;
-  }
-  
-  .hero {
-    position: relative;
-    background-image: url('images/hero_transparency_1024.png.jpg');
-    height: 400px;
-    background-size: cover;
-    background-position: center;
-  }
-  
-  h1 {
-    position: absolute;
-    top: 20px;
-    left: 20px;
-    color: white;
-  }
-  
-  article {
-    position: absolute;
-    bottom: 20px;
-    left: 20px;
-    background-color: rgba(0, 0, 0, 0.7);
-    padding: 10px;
-    color: white; 
-  }
-  
-  img {
-    max-width: 100%;
-    height: auto;
-  }
-  
-  footer {
-    text-align: center;
-    padding: 20px 0;
-  }
-  
-  footer p {
-    margin: 10px 0;
-  }
-  
-  footer a {
-    margin: 0 10px;
-  }
-  
-  footer img {
-    width: 30px; 
-    height: auto;
-  }
-  
-  footer a:hover img {
-    opacity: 0.8; 
-  }
+  primary-color: #0D0E24;
+  secondary-color: #A7A9B9;
+  accent1-color: #373E7C;
+  accent2-color: #1E203F;
+  background-color: rgba(255, 255, 255, 0.9);
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  padding: 0;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+nav a {
+  margin: 0 15px;
+  color: var(--primary-color);
+  text-decoration: none;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+.hero {
+  position: relative;
+  background-image: url('images/hero_transparency_1024.png.jpg');
+  height: 400px;
+  background-size: cover;
+  background-position: center;
+}
+
+h1 {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  color: white;
+}
+
+article {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 10px;
+  color: white; 
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+footer {
+  text-align: center;
+  padding: 20px 0;
+}
+
+footer p {
+  margin: 10px 0;
+}
+
+footer a {
+  margin: 0 10px;
+}
+
+footer img {
+  width: 30px; 
+  height: auto;
+}
+
+footer a:hover img {
+  opacity: 0.8; 
+}
