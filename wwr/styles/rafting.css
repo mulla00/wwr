@@ -113,25 +113,26 @@ section p {
 
 /* Adventure Section Using Flexbox */
 .adventure {
-    display: flex;
-    justify-content: space-around;
-    padding: 20px;
-    background-color: #FFFFFF;
+    margin: 20px 0; /* Adds space above and below the adventure section */
 }
 
-figure {
-    text-align: center;
+.adventure-images {
+    display: flex; /* Enables flexbox layout */
+    flex-wrap: wrap; /* Allows items to wrap into the next line if needed */
+    justify-content: space-between; /* Distributes space evenly between items */
+    gap: 20px; /* Adds space between items */
 }
 
-figure img {
-    max-width: 150px;
-    height: auto;
+.adventure-images figure {
+    flex: 1; /* Each figure will take equal space */
+    min-width: 200px; /* Minimum width for the figure */
+    text-align: center; /* Center text under images */
 }
 
-figure figcaption {
-    margin-top: 10px;
-    font-style: italic;
-    color: #373E7C;
+.adventure-images img {
+    width: 100%; /* Make images responsive */
+    height: auto; /* Keep aspect ratio */
+    border-radius: 8px;
 }
 
 /* Footer Layout Using Flexbox */
