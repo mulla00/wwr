@@ -73,7 +73,7 @@ nav ul li a:hover {
 .hero {
     position: relative;
     height: 500px;
-    background: url('images/rafting16_1024.jpg') no-repeat center center; /* Ensure the image URL is correct */
+    background: url('images/hero_transparency_1024.png') no-repeat center center; /* Ensure the image URL is correct */
     background-size: cover;
     display: flex;
     justify-content: center;
