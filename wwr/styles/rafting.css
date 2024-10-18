@@ -72,7 +72,7 @@ nav ul li a:hover {
 .hero {
     position: relative;
     height: 500px;
-    background: url('images/hero_transparency_1024.png') no-repeat center center;
+    background: url('images/rafting16_1024.jpg') no-repeat center center; /* Ensure the image URL is correct */
     background-size: cover;
     overflow: hidden;
 }
@@ -118,6 +118,7 @@ nav ul li a:hover {
 .cta-button:hover {
     background-color: var(--accent-color);
 }
+
 
 /* History Section Using CSS Grid */
 .history {
