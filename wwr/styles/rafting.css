@@ -67,26 +67,23 @@ nav ul li a {
 nav ul li a:hover {
     color: var(--accent-color);
 }
-
-/* Hero Section */
 /* Hero Section */
 .hero {
     position: relative;
-    height: 500px;
-    background: url('images/hero_transparency_1024.png') no-repeat center center; /* Ensure the image URL is correct */
-    background-size: cover;
+    height: 500px; /* Set the height of the hero section */
     display: flex;
     justify-content: center;
     align-items: center;
+    background: url('images/rafting16_1024.jpg') no-repeat center center; /* Use the rafting image as the background */
+    background-size: cover; /* Ensure the image covers the entire section */
     color: white;
 }
 
 .hero-content {
-    position: absolute;
-    z-index: 2;
+    position: relative;
+    z-index: 2; /* Make sure the text is on top of the background image */
     text-align: center;
-    color: white;
-    background-color: rgba(0, 0, 0, 0.5); /* Slight dark background for readability */
+    background-color: rgba(0, 0, 0, 0.5); /* Add a dark transparent background for better text readability */
     padding: 20px;
     border-radius: 8px;
 }
@@ -94,11 +91,13 @@ nav ul li a:hover {
 .hero h1 {
     font-size: 3em;
     margin-bottom: 10px;
+    color: #ffffff;
 }
 
 .hero p {
     font-size: 1.5em;
     margin-bottom: 20px;
+    color: #ffffff;
 }
 
 .cta-button {
@@ -108,14 +107,11 @@ nav ul li a:hover {
     text-decoration: none;
     font-weight: bold;
     border-radius: 5px;
-    display: inline-block;
 }
 
 .cta-button:hover {
     background-color: var(--accent-color);
 }
-
-
 
 /* History Section Using CSS Grid */
 .history {
