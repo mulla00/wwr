@@ -74,7 +74,7 @@ nav ul li a:hover {
     display: flex;
     justify-content: center;
     align-items: center;
-    background: url('images/rafting16_1024.jpg') no-repeat center center; /* Use the rafting image as the background */
+    background: url('images/hero_transparency_1024.png') no-repeat center center; /* Use the rafting image as the background */
     background-size: cover; /* Ensure the image covers the entire section */
     color: white;
 }
