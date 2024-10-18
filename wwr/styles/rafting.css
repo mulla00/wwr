@@ -1,17 +1,27 @@
+/* Root Variables */
+:root {
+    --main-color: #373E7C;
+    --accent-color: #A7A9B9;
+    --text-color: #1E203F;
+    --background-color: #F2F2F2;
+}
+
 /* General Styles */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    background-color: var(--background-color);
 }
 
 h1, h2 {
-    color: #373E7C;
+    font-family: 'Montserrat', sans-serif;
+    color: var(--main-color);
 }
 
 p {
-    color: #1E203F;
+    color: var(--text-color);
     line-height: 1.6;
 }
 
@@ -55,30 +65,27 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    color: #A7A9B9;
+    color: var(--accent-color);
 }
 
-/* White Water Rafting Section */
-section {
-    display: flex;
-    justify-content: space-between;
+/* White Water Rafting Hero Section */
+.hero {
+    position: relative;
+    text-align: center;
+    background-color: var(--background-color);
     padding: 20px;
-    background-color: #F2F2F2;
 }
 
-section img {
-    max-width: 300px;
-    height: auto;
+.hero h1, .hero article {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
-section h1 {
-    font-size: 2em;
-    color: #373E7C;
-}
-
-section p {
-    max-width: 600px;
-    line-height: 1.5;
+.hero article img {
+    float: right;
+    margin: 10px;
 }
 
 /* History Section Using CSS Grid */
@@ -95,43 +102,32 @@ section p {
     height: auto;
 }
 
-.history div {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
 .history h2 {
-    color: #373E7C;
     font-size: 1.8em;
     margin-bottom: 10px;
 }
 
-.history p {
-    line-height: 1.5;
-}
-
 /* Adventure Section Using Flexbox */
 .adventure {
-    margin: 20px 0; /* Adds space above and below the adventure section */
+    margin: 20px 0;
 }
 
 .adventure-images {
-    display: flex; /* Enables flexbox layout */
-    flex-wrap: wrap; /* Allows items to wrap into the next line if needed */
-    justify-content: space-between; /* Distributes space evenly between items */
-    gap: 20px; /* Adds space between items */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
 }
 
 .adventure-images figure {
-    flex: 1; /* Each figure will take equal space */
-    min-width: 200px; /* Minimum width for the figure */
-    text-align: center; /* Center text under images */
+    flex: 1;
+    min-width: 200px;
+    text-align: center;
 }
 
 .adventure-images img {
-    width: 100%; /* Make images responsive */
-    height: auto; /* Keep aspect ratio */
+    width: 100%;
+    height: auto;
     border-radius: 8px;
 }
 
@@ -151,4 +147,8 @@ footer img {
 footer p {
     color: white;
     margin-right: auto;
+}
+
+footer a {
+    text-decoration: none;
 }
