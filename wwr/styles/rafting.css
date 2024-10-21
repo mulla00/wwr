@@ -70,7 +70,7 @@ nav ul li a:hover {
 /* Hero Section */
 .hero {
     position: relative;
-    height: 500px; /* Set the height of the hero section */
+    height: 300px; /* Set the height of the hero section */
     display: flex;
     justify-content: center;
     align-items: center;
