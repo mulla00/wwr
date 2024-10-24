@@ -1,56 +1,61 @@
-/* Contact Page Styles */
-.contact-info, .google-map, .employees, .contact-form {
-    margin: 20px 0;
+/* Contact Page Specific Styles */
+
+/* Company Info Section */
+.company-info {
+    text-align: center;
     padding: 20px;
     background-color: var(--background-color);
 }
 
-.contact-info h2, .google-map h2, .employees h2, .contact-form h2 {
-    color: var(--main-color);
-}
-
-/* Google Map */
-.google-map iframe {
-    width: 100%;
-    height: 300px;
-    border: none;
-}
-
 /* Employee Profiles */
-.employee-profiles {
+.employees {
     display: flex;
-    justify-content: space-between;
-    gap: 20px;
+    justify-content: space-around;
+    padding: 20px;
+    background-color: var(--background-color);
 }
 
-.employee-profiles figure {
+.employees .profile {
     text-align: center;
 }
 
-.contact-form label {
-    display: block;
-    margin-bottom: 10px;
+.employees img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.profile figcaption {
     font-weight: bold;
+    margin-top: 10px;
+}
+
+/* Contact Form Styles */
+.contact-form {
+    padding: 20px;
+    background-color: #f7f7f7;
+}
+
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
 }
 
 .contact-form input[type="text"],
 .contact-form input[type="email"],
 .contact-form textarea {
-    width: 100%;
     padding: 10px;
-    margin-bottom: 20px;
+    border: 1px solid var(--text-color);
     border-radius: 5px;
-    border: 1px solid #ccc;
-}
-
-.contact-form input[type="radio"] {
-    margin-right: 10px;
+    width: 100%;
 }
 
 .contact-form button {
+    padding: 10px 20px;
     background-color: var(--button-bg);
     color: var(--button-text);
-    padding: 10px 20px;
     border: none;
     border-radius: 5px;
     cursor: pointer;
@@ -58,4 +63,29 @@
 
 .contact-form button:hover {
     background-color: var(--accent-color);
+}
+
+/* Map Section */
+.map iframe {
+    width: 100%;
+    height: 300px;
+    border: none;
+}
+
+/* Footer */
+footer {
+    background-color: var(--main-color);
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+footer .social-icons img {
+    width: 30px;
+    margin: 0 10px;
+}
+
+footer a {
+    color: white;
+    text-decoration: underline;
 }
