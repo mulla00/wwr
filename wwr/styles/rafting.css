@@ -178,3 +178,104 @@ footer p {
 footer a {
     text-decoration: none;
 }
+/* Contact Us Section */
+.company-info {
+    text-align: center;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+/* Fix 404 Image or Embedded Content */
+.map iframe {
+    width: 100%;
+    height: 300px;
+    border: none;
+}
+
+/* Footer Section */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #1E203F; /* Footer background color */
+    color: white;
+}
+
+footer .social-icons img {
+    width: 30px;
+    margin: 0 10px;
+}
+
+/* Contact Page Specific Styles */
+
+/* Company Info Section */
+.company-info {
+    text-align: center;
+    padding: 20px;
+    background-color: var(--background-color);
+}
+
+/* Employee Profiles */
+.employees {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    background-color: var(--background-color);
+}
+
+.employees .profile {
+    text-align: center;
+}
+
+.employees img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.profile figcaption {
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+/* Contact Form Styles */
+.contact-form {
+    padding: 20px;
+    background-color: #f7f7f7;
+}
+
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+    padding: 10px;
+    border: 1px solid var(--text-color);
+    border-radius: 5px;
+    width: 100%;
+}
+
+.contact-form button {
+    padding: 10px 20px;
+    background-color: var(--button-bg);
+    color: var(--button-text);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+    background-color: var(--accent-color);
+}
+
+/* Map Section */
+.map iframe {
+    width: 100%;
+    height: 300px;
+    border: none;
+}
