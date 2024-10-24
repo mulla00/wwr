@@ -1,0 +1,66 @@
+<main>
+    <!-- Contact Information Section -->
+    <section class="contact-info">
+        <h2>Contact Information</h2>
+        <p><strong>Address:</strong> 123 River Road, Adventure City, AC 56789</p>
+        <p><strong>Phone:</strong> +123 456 7890</p>
+        <p><strong>Email:</strong> contact@raftingcompany.com</p>
+    </section>
+
+    <!-- Embedded Google Map Section -->
+    <section class="google-map">
+        <h2>Our Location</h2>
+        <iframe src="https://www.google.com/maps/embed?pb=..." width="400" height="300" allowfullscreen="" loading="lazy"></iframe>
+    </section>
+
+    <!-- Employee Profiles Section -->
+    <section class="employees">
+        <h2>Meet Our Team</h2>
+        <div class="employee-profiles">
+            <figure>
+                <img src="images/employee1.jpg" alt="John Doe">
+                <figcaption>John Doe, Guide</figcaption>
+            </figure>
+            <figure>
+                <img src="images/employee2.jpg" alt="Jane Smith">
+                <figcaption>Jane Smith, Coordinator</figcaption>
+            </figure>
+            <figure>
+                <img src="images/employee3.jpg" alt="Sam Lee">
+                <figcaption>Sam Lee, Safety Officer</figcaption>
+            </figure>
+        </div>
+    </section>
+
+    <!-- Contact Form Section -->
+    <section class="contact-form">
+        <h2>Contact Us</h2>
+        <form action="submit_contact.php" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label>Purpose:</label>
+            <input type="radio" id="inquiry" name="purpose" value="general" required>
+            <label for="inquiry">General Inquiry</label>
+
+            <input type="radio" id="reservation" name="purpose" value="reservation">
+            <label for="reservation">Reservation Question</label>
+
+            <input type="radio" id="suggestion" name="purpose" value="suggestion">
+            <label for="suggestion">Website Suggestion</label>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+
+            <label for="newsletter">
+                <input type="checkbox" id="newsletter" name="newsletter">
+                Please subscribe me to the monthly newsletter
+            </label>
+
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+</main>
