@@ -1,18 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us | White Water Rafting</title>
-    <meta name="description" content="Get in touch with us for inquiries, reservations, or suggestions.">
-    <link rel="stylesheet" href="styles/contact.css">
-</head>
+    <title>Contact Us - White Water Rafting</title>
 
+    <!-- Google Fonts Link (You will add this) -->
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+    <!-- Link to CSS File -->
+    <link rel="stylesheet" href="contact.css">
+</head>
 <body>
+
     <!-- Header Section -->
     <header>
-        <img src="images/skelletons.jpg" alt="Rafting Company Logo">
+        <div class="logo">
+            <img src="images/skelletons.jpg" alt="Rafting Company Logo">
+        </div>
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
@@ -25,40 +29,20 @@
 
     <!-- Main Content Section -->
     <main>
-        <!-- Company Information Section -->
-        <section class="company-info">
-            <h2>Contact Us</h2>
-            <address>
-                123 River Street<br>
-                Adventure City, AC 12345<br>
-                Phone: (123) 456-7890<br>
-                Email: <a href="mailto:info@rafting.com">info@rafting.com</a>
-            </address>
+        <section class="contact-info">
+            <h1>Contact Us</h1>
+            <p>123 River Street</p>
+            <p>Adventure City, AC 12345</p>
+            <p>Phone: (123) 456-7890</p>
+            <p>Email: <a href="mailto:info@rafting.com">info@rafting.com</a></p>
         </section>
 
-        <!-- Google Map -->
+        <!-- Google Map Embed (you can embed actual map here later) -->
         <section class="map">
-            <iframe src="your-google-map-link-here" width="100%" height="300" allowfullscreen></iframe>
+            <iframe src=<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14894.249214598341!2d-175.26483381737341!3d-21.050192363784326!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x71f4a01598c2060d%3A0x305cb0611e5a5e14!2sAtata%20Island!5e0!3m2!1sen!2sng!4v1729752772351!5m2!1sen!2sng" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> 
         </section>
 
-        <!-- Employee Profiles -->
-        <section class="employees">
-            <h2>Meet Our Team</h2>
-            <div class="profile">
-                <img src="images/employee1.jpg" alt="John Doe">
-                <figcaption>John Doe - Guide</figcaption>
-            </div>
-            <div class="profile">
-                <img src="images/employee2.jpg" alt="Jane Smith">
-                <figcaption>Jane Smith - Coordinator</figcaption>
-            </div>
-            <div class="profile">
-                <img src="images/employee3.jpg" alt="Sam Lee">
-                <figcaption>Sam Lee - Safety Officer</figcaption>
-            </div>
-        </section>
-
-        <!-- Contact Form -->
+        <!-- Contact Form Section -->
         <section class="contact-form">
             <h2>Send Us a Message</h2>
             <form action="submit-form.php" method="POST">
@@ -68,43 +52,24 @@
                 <label for="email">Email:</label>
                 <input type="email" id="email" name="email" required>
 
-                <label>Purpose of Message:</label>
-                <div>
-                    <input type="radio" id="inquiry" name="purpose" value="Inquiry">
-                    <label for="inquiry">General Inquiry</label>
-                </div>
-                <div>
-                    <input type="radio" id="reservation" name="purpose" value="Reservation">
-                    <label for="reservation">Reservation Question</label>
-                </div>
-                <div>
-                    <input type="radio" id="suggestion" name="purpose" value="Suggestion">
-                    <label for="suggestion">Website Suggestion</label>
-                </div>
-
                 <label for="message">Message:</label>
                 <textarea id="message" name="message" rows="5" required></textarea>
 
-                <div>
-                    <input type="checkbox" id="newsletter" name="newsletter">
-                    <label for="newsletter">Please subscribe me to the monthly newsletter</label>
-                </div>
-
-                <button type="submit">Submit</button>
+                <button type="submit">Send Message</button>
             </form>
         </section>
     </main>
 
     <!-- Footer Section -->
     <footer>
-        <p>© 2024 White Water Rafting. All rights reserved.</p>
+        <p>Follow us on social media</p>
         <div class="social-icons">
-            <a href="https://facebook.com"><img src="images/facebook-icon.png" alt="Facebook"></a>
-            <a href="https://twitter.com"><img src="images/twitter-icon.png" alt="Twitter"></a>
-            <a href="https://instagram.com"><img src="images/instagram-icon.png" alt="Instagram"></a>
+            <a href="#"><img src="images/facebook-icon.png" alt="Facebook"></a>
+            <a href="#"><img src="images/instagram-icon.png" alt="Instagram"></a>
+            <a href="#"><img src="images/twitter-icon.png" alt="Twitter"></a>
         </div>
-        <a href="wireframe-link.png" target="_blank">View Contact Us Wireframe</a>
+        <p>&copy; 2024 White Water Rafting Adventures</p>
     </footer>
-</body>
 
+</body>
 </html>
