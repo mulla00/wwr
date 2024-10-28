@@ -15,7 +15,7 @@ body {
 /* Header */
 header {
     display: flex;
-    align-items: center;
+    align-items: all;
     justify-content: space-between;
     padding: 1rem 2rem;
     background-color: #1E203F; /* Dark navy blue */
