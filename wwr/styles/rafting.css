@@ -1,281 +1,69 @@
-/* Root Variables */
-:root {
-    --main-color: #373E7C;
-    --accent-color: #A7A9B9;
-    --text-color: #1E203F;
-    --background-color: #F2F2F2;
-    --button-bg: #B89D6C;
-    --button-text: #FFF;
-}
-
-/* General Styles */
+/* Global Styles */
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: Arial, sans-serif;
+    color: #0D0E24;
+    background-color: #A7A9B9;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-    background-color: var(--background-color);
 }
 
-h1, h2 {
-    font-family: 'Montserrat', sans-serif;
-    color: var(--main-color);
-}
-
-p {
-    color: var(--text-color);
-    line-height: 1.6;
-}
-
-img {
-    max-width: 100%;
-    height: auto;
-}
-
-/* Header Layout Using CSS Grid */
 header {
-    display: grid;
-    grid-template-columns: auto 1fr;
+    background-color: #373E7C;
+    display: flex;
     align-items: center;
-    padding: 10px;
-    background-color: #0D0E24;
-}
-
-header img {
-    max-width: 100px;
-}
-
-nav ul {
-    display: flex;
-    justify-content: flex-end;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}
-
-nav ul li {
-    margin-left: 20px;
-}
-
-nav ul li a {
-    text-decoration: none;
-    color: white;
-    font-size: 1.2em;
-    font-weight: bold;
-}
-
-nav ul li a:hover {
-    color: var(--accent-color);
-}
-/* Hero Section */
-.hero {
-    position: relative;
-    height: 500px; /* Set the height of the hero section */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: url('images/rafting5.jpg') no-repeat center center; /* Use the rafting image as the background */
-    background-size: cover; /* Ensure the image covers the entire section */
-    color: white;
-}
-
-.hero-content {
-    position: relative;
-    z-index: 2; /* Make sure the text is on top of the background image */
-    text-align: center;
-    background-color: rgba(0, 0, 0, 0.5); /* Add a dark transparent background for better text readability */
-    padding: 20px;
-    border-radius: 8px;
-}
-
-.hero h1 {
-    font-size: 3em;
-    margin-bottom: 10px;
-    color: #333;
-}
-
-.hero p {
-    font-size: 1.5em;
-    margin-bottom: 20px;
-    color: #333;
-}
-
-.cta-button {
-    background-color: #d3a76a;
-    color: white;
-    padding: 10px 20px;
-    text-decoration: none;
-    font-weight: bold;
-    border-radius: 5px;
-}
-
-.cta-button:hover {
-    background-color: var(--accent-color);
-}
-
-/* History Section Using CSS Grid */
-.history {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 20px;
-    padding: 20px;
-    background-color: #E6E6E6;
-}
-
-.history img {
-    max-width: 100%;
-    height: auto;
-    opacity: 0.85; /* Slight transparency for the history section images */
-}
-
-.history h2 {
-    font-size: 1.8em;
-    margin-bottom: 10px;
-}
-
-/* Adventure Section Using Flexbox */
-.adventure {
-    margin: 20px 0;
-}
-
-.adventure-images {
-    display: flex;
-    flex-wrap: wrap;
     justify-content: space-between;
-    gap: 20px;
-}
-
-.adventure-images figure {
-    flex: 1;
-    min-width: 200px;
-    text-align: center;
-}
-
-.adventure-images img {
-    width: 100%;
-    height: auto;
-    border-radius: 8px;
-}
-
-/* Footer Layout Using Flexbox */
-footer {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
     padding: 10px;
-    background-color: #0D0E24;
 }
 
-footer img {
-    max-width: 40px;
-    margin-left: 15px;
+header .logo {
+    height: 50px;
 }
 
-footer p {
+header nav a {
     color: white;
-}
-
-footer a {
     text-decoration: none;
-}
-/* Contact Us Section */
-.company-info {
-    text-align: center;
-    padding: 20px;
-    background-color: white;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-}
-
-/* Fix 404 Image or Embedded Content */
-.map iframe {
-    width: 100%;
-    height: 300px;
-    border: none;
-}
-
-/* Footer Section */
-footer {
-    text-align: center;
-    padding: 20px;
-    background-color: #1E203F; /* Footer background color */
-    color: white;
-}
-
-footer .social-icons img {
-    width: 30px;
     margin: 0 10px;
-}
-
-/* Contact Page Specific Styles */
-
-/* Company Info Section */
-.company-info {
-    text-align: center;
-    padding: 20px;
-    background-color: var(--background-color);
-}
-
-/* Employee Profiles */
-.employees {
-    display: flex;
-    justify-content: space-around;
-    padding: 20px;
-    background-color: var(--background-color);
-}
-
-.employees .profile {
-    text-align: center;
-}
-
-.employees img {
-    width: 200px;
-    height: 200px;
-    object-fit: cover;
-    border-radius: 50%;
-}
-
-.profile figcaption {
     font-weight: bold;
-    margin-top: 10px;
 }
 
-/* Contact Form Styles */
-.contact-form {
+.hero {
+    background: url('images/hero-bg.jpg') no-repeat center center/cover;
+    text-align: center;
+    color: white;
+    padding: 100px 20px;
+}
+
+.popular-trips, .about-us, .trips, .contact {
     padding: 20px;
-    background-color: #f7f7f7;
+    max-width: 800px;
+    margin: auto;
 }
 
-.contact-form form {
+.trip-card, .profile {
+    background-color: #373E7C;
+    color: white;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 5px;
     display: flex;
-    flex-direction: column;
-    gap: 15px;
+    align-items: center;
 }
 
-.contact-form input[type="text"],
-.contact-form input[type="email"],
-.contact-form textarea {
+.trip-card img, .profile img {
+    width: 100px;
+    height: auto;
+    margin-right: 15px;
+}
+
+.contact form {
+    display: grid;
+    gap: 10px;
+}
+
+footer {
+    background-color: #1E203F;
+    color: white;
+    text-align: center;
     padding: 10px;
-    border: 1px solid var(--text-color);
-    border-radius: 5px;
-    width: 100%;
 }
 
-.contact-form button {
-    padding: 10px 20px;
-    background-color: var(--button-bg);
-    color: var(--button-text);
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-.contact-form button:hover {
-    background-color: var(--accent-color);
-}
-
-/* Map Section */
-.map iframe {
-    width: 100%;
-    height: 300px;
-    border: none;
-}
