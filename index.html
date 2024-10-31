@@ -1,40 +1,81 @@
 <!DOCTYPE html>
-<html lang="en-US">
+<html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Adebiyi Ademola | WWR 130</title>
-  <meta name="description" content="Mulla homepage">
-  <meta name="author" content="Adebiyi Ademola">
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,400;1,100&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles\rafting.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>White Water Rafting | Home</title>
+    <meta name="description" content="Experience and discover adrenaline-pumping expeditions, expert guides, and stunning natural landscapes with our white water rafting excursions!">
+    <meta name="author" content="Adebiyi Ademola">
+    <link href="styles/rafting.css" rel="stylesheet">
 </head>
 <body>
     <header>
-        <img src="images\skelletons.jpg" alt="Rafting Logo" class="logo">
+        <img src="images/skelletons.jpg" alt="Rafting Site Logo" width="200">
         <nav>
-            <a href="index.html"> welcome </a>
-            <a href="home.html">Home</a>
+            <a href="index.html">Home</a>
             <a href="about.html">About Us</a>
             <a href="trips.html">Trips</a>
-            <a href="contact-us.html">Contact Us</a>
+            <a href="contact.html">Contact Us</a>
         </nav>
     </header>
-</header>
-  <main>
-    <h1>Adebiyi Ademola | WDD 130</h1>
-    <img src="images\profile.jpg" alt="Adebiyi Ademola Profile Picture" width="200">
-    <p>Hello! I'm Adebiyi Ademola, Welcome to my white-water Raft Project</p>
-  </main>
+    <main>
+        <section class="homeHeading">
+            <h1>Welcome to White Water Rafting</h1>
+            <!-- Large full-width image -->
+            <img src="images/home1.jpg" alt="Rafting Adventure">
+            <div class="newsletter">
+                <h3>Subscribe to Our Newsletter</h3>
+                <form action="#" class="homeForm" method="get">
+                    <div class="form-group">
+                        <label for="name">Name:</label>
+                        <input type="text" name="name" id="name" placeholder="Your full name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" name="email" id="email" placeholder="Your email address" required>
+                    </div>
+                    <button type="submit">Subscribe</button>
+                </form>
+            </div>
+        </section>
 
+        <section class="viewTrips">
+            <h2>Plan Your Adventure Now!</h2>
+            <a href="trips.html" class="button"><button>View trips</button></a>
+        </section>
+
+        <section class="tripsDesc">
+            <div class="grid-item">
+                <img src="images/adventure1.jpg" alt="Adventure 1">
+                <h3>Adventure 1</h3>
+                <p>Embark on thrilling rafting expeditions through challenging rapids, experiencing the raw power of nature.</p>
+            </div>
+            <div class="grid-item">
+                <img src="images/adventure3.jpg" alt="Adventure 2">
+                <h3>Adventure 2</h3>
+                <p>Our expert guides ensure a safe yet exhilarating journey, sharing their expertise and passion for adventure.</p>
+            </div>
+            <div class="grid-item">
+                <img src="images/adventure2.jpg" alt="Adventure 3">
+                <h3>Adventure 3</h3>
+                <p>Discover breathtaking landscapes and scenic beauty while navigating through pristine waterways.</p>
+            </div>
+            <div class="grid-item">
+                <img src="images/adventure4.jpg" alt="Adventure 4">
+                <h3>Adventure 4</h3>
+                <p>Enjoy unforgettable experiences with family-friendly trips suitable for all ages and skill levels.</p>
+            </div>
+        </section>
+
+        
+       
+    </main>
     <footer>
-       <p>© 2024 Adventure Rafting Co. | Adebiyi Ademola</p>
-  <a href="https://facebook.com"><img src="images/facebook-icon.png" alt="Facebook" /></a>
-  <a href="https://twitter.com"><img src="images/twitter-icon.png" alt="Twitter" /></a>
-  <a href="https://instagram.com"><img src="images/instagram-icon.png" alt="Instagram" /></a>
+        <p>©2024 🦀 <a href="index.html">White Water Rafting</a> 🦀 Adebiyi Ademola 🦀 <a class="wireframe" href="images/Home-page-wireframe.png" target="_blank">Home page wireframe</a></p>
+        <nav class="sociallinks">
+            <a href="https://facebook.com" target="_blank"><img src="images/facebook-600.png" alt="Facebook icon by Icons8.com"></a>
+            <a href="https://twitter.com" target="_blank"><img src="images/twitterx-600.png" alt="Twitter(X) icon by Icons8.com"></a>
+        </nav>
     </footer>
 </body>
 </html>
